@@ -214,6 +214,28 @@ input {
 
 }
 
+/* textarea and visually-hidden helper */
+.contact-content textarea {
+    padding: 18px 25px;
+    background-color: #3F3456;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-size: 17px;
+    min-height: 120px;
+    width: 100%;
+}
+
+.sr-only {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
 ::placeholder {
     color: #E0E0E0;
     font-size: 17px;

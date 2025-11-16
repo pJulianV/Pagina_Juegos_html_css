@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Galería - Tienda de Juegos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Galería de Juegos</h1>
+                <p>Explora nuestra selección. Usa los filtros para ver categorías específicas.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="popular">
+            <h2>Filtros</h2>
+            <div class="filters" style="text-align:center;margin-bottom:30px;">
+                <button class="btn-1 filter-btn" data-filter="all">Todos</button>
+                <button class="btn-1 filter-btn" data-filter="accion">Acción</button>
+                <button class="btn-1 filter-btn" data-filter="estrategia">Estrategia</button>
+                <button class="btn-1 filter-btn" data-filter="indie">Indie</button>
+            </div>
+
+            <h2>Galería</h2>
+            <div class="gallery product-content" id="gallery">
+                <div class="product-1" data-category="accion">
+                    <img src="images/l1.jpg" alt="Halo">
+                    <div class="product-txt">
+                        <h3>Halo Reach</h3>
+                        <div class="price">
+                            <p>$500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-1" data-category="estrategia">
+                    <img src="images/l2.jpg" alt="Estrategia">
+                    <div class="product-txt">
+                        <h3>Juego Estrategia</h3>
+                        <div class="price"><p>$450</p></div>
+                    </div>
+                </div>
+
+                <div class="product-1" data-category="indie">
+                    <img src="images/l3.jpg" alt="Indie">
+                    <div class="product-txt">
+                        <h3>Clash Royale</h3>
+                        <div class="price"><p>$300</p></div>
+                    </div>
+                </div>
+
+                <div class="product-1" data-category="accion">
+                    <img src="images/l4.jpg" alt="Cyberpunk">
+                    <div class="product-txt">
+                        <h3>Cyberpunk</h3>
+                        <div class="price"><p>$700</p></div>
+                    </div>
+                </div>
+
+                <div class="product-1" data-category="indie">
+                    <img src="images/l5.jpg" alt="Fortnite">
+                    <div class="product-txt">
+                        <h3>Fortnite</h3>
+                        <div class="price"><p>$0</p></div>
+                    </div>
+                </div>
+
+                <div class="product-1" data-category="estrategia">
+                    <img src="images/l6.jpg" alt="Gears">
+                    <div class="product-txt">
+                        <h3>Gears of War</h3>
+                        <div class="price"><p>$600</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="link">
+            <a href="index.html" class="logo">Logo</a>
+            <div class="link">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

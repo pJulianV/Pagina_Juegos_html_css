@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Contacto - Tienda de Juegos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Contacto</h1>
+                <p>Envíanos un mensaje. Los campos marcados son obligatorios.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact">
+            <div class="contact-content">
+                <h3>Escríbenos</h3>
+                <form id="contactForm" novalidate>
+                    <label for="name" class="sr-only">Nombre (opcional)</label>
+                    <input id="name" name="name" type="text" placeholder="Nombre (opcional)">
+
+                    <label for="email" class="sr-only">Correo electrónico (requerido)</label>
+                    <input id="email" name="email" type="email" placeholder="Correo electrónico *" required aria-required="true">
+
+                    <label for="message" class="sr-only">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Mensaje"></textarea>
+
+                    <div style="margin-top:15px;">
+                        <input type="submit" class="btn-3" value="Enviar">
+                    </div>
+                    <p id="formError" style="color:#ffdddd;margin-top:10px;display:none;"></p>
+                    <p id="formSuccess" style="color:#ddffdd;margin-top:10px;display:none;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="link">
+            <a href="index.html" class="logo">Logo</a>
+            <div class="link">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

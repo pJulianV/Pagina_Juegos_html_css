@@ -1,0 +1,13 @@
+{
+  "name": "pagina-juegos",
+  "version": "1.0.0",
+  "description": "Sitio estático de ejemplo para proyecto - Tienda de Juegos",
+  "scripts": {
+    "test": "jest --color"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "jsdom": "^22.0.0"
+  }
+}
