@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Sitio estático de ejemplo para proyecto - Tienda de Juegos",
   "scripts": {
-    "test": "jest --color"
+    "test": "jest --color --detectOpenHandles"
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "jsdom": "^22.1.0"
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
