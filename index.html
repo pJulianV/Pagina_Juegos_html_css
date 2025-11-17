@@ -18,7 +18,6 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="index.html#todos">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
 
@@ -29,7 +28,7 @@
             <div class="header-txt">
                 <h1>Compra tu <span>juego</span> <br>favorito</h1>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae maiores tempora, repellendus accusantium unde deserunt quos ad quisquam quo dolores, nisi amet molestias rerum nostrum eligendi praesentium natus distinctio nesciunt.
+                    Encuentra una selección curada de videojuegos para todos los gustos: acción, estrategia e indie. Ofrecemos recomendaciones, reseñas y promociones para que elijas el título perfecto según tu estilo de juego.
                 </p>
                 <div class="buttons">
                     <a href="#" class="btn-1">Informacion</a>
@@ -82,7 +81,7 @@
             <div class="product-1">
                 <img src="images/l2.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Juego Lorem</h3>
+                    <h3>The Witcher 3</h3>
                     <div class="price">
                         <p>$500</p>
                         <a href="#" class="btn-2">Comprar</a>
@@ -166,7 +165,7 @@
             <div class="product-1">
                 <img src="images/l8.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Juego Lorem</h3>
+                    <h3>Hades</h3>
                     <div class="price">
                         <p>$500</p>
                         <a href="#" class="btn-2">Comprar</a>
@@ -180,7 +179,7 @@
             <div class="product-1">
                 <img src="images/l9.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Juego Lorem</h3>
+                    <h3>Stardew Valley</h3>
                     <div class="price">
                         <p>$500</p>
                         <a href="#" class="btn-2">Comprar</a>
@@ -198,13 +197,12 @@
     <section class="contact container">
 
         <div class="contact-content">
-            <h3>Suscribete a nuestro blog</h3>
-            <form>
-                <input type="email" placeholder="Escribe tu correo">
-                <input type="submit" class="btn-3" value="Enviar">
-
+            <h3>Suscríbete a nuestro boletín</h3>
+            <form id="subscribeForm">
+                <input type="email" id="subscribeEmail" name="email" placeholder="Introduce tu correo electrónico" required aria-required="true">
+                <input type="submit" class="btn-3" value="Suscribirse">
             </form>
-
+            <p id="subscribeMessage" style="display:none;margin-top:12px;color:#ddffdd;"></p>
         </div>
 
     </section>
