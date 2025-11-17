@@ -38,12 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // FORM VALIDATION
+    // FORM VALIDATION Y ENVÍO DE EMAIL
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
             const email = document.getElementById('email');
+            const nombre = document.getElementById('nombre');
+            const mensaje = document.getElementById('mensaje');
             const err = document.getElementById('formError');
             const ok = document.getElementById('formSuccess');
             err.style.display = 'none';
@@ -56,11 +58,36 @@ document.addEventListener('DOMContentLoaded', function () {
                 return false;
             }
 
-            // Simular envío exitoso
-            ok.textContent = 'Mensaje enviado correctamente. Gracias.';
-            ok.style.display = 'block';
-            contactForm.reset();
-            return true;
+            // Enviar email al backend
+            fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    nombre: nombre.value || 'Usuario',
+                    email: email.value,
+                    mensaje: mensaje.value
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    ok.textContent = 'Mensaje enviado correctamente. Gracias.';
+                    ok.style.display = 'block';
+                    contactForm.reset();
+                } else {
+                    err.textContent = data.error || 'Error al enviar el mensaje.';
+                    err.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                err.textContent = 'Error de conexión. Verifica que el servidor está corriendo.';
+                err.style.display = 'block';
+                console.error('Error:', error);
+            });
+
+            return false;
         });
     }
 });
