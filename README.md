@@ -1,4 +1,4 @@
-# Tienda Online de Video Juegos
+# Tienda Online de Juegos
 
 Sitio web para una tienda de videojuegos, desarrollado como proyecto final con roles de programador y tester.
 
