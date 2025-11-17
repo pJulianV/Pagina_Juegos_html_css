@@ -1,31 +1,61 @@
-# Tienda de Juegos - Proyecto
+# Tienda Online de Video Juegos
 
-Este repositorio contiene un sitio estático de ejemplo para un proyecto de clase (Programador + Tester).
+Sitio web para una tienda de videojuegos, desarrollado como proyecto final con roles de programador y tester.
 
-Estructura:
-- `index.html` — Inicio
-- `galeria.html` — Galería con filtros
-- `contacto.html` — Formulario de contacto con validación
-- `style.css`, `fonts.css` — estilos
-- `script.js` — lógica de filtros y validación
-- `tests/site.test.js` — pruebas automáticas (Jest + jsdom)
-- `.github/workflows/ci.yml` — workflow para ejecutar tests en GitHub Actions
+Repositorio: https://github.com/pJulianV/Pagina_Juegos_html_css
 
-Requisitos para ejecutar tests localmente:
-- Node.js (recomiendo LTS >=18). Descarga: https://nodejs.org/
+## Lo que desarrollé
 
-Comandos:
-```powershell
-cd 'C:\Users\Usuario\Desktop\Julian\Workspace\Pagina de juegos_html_css'
+### Como Programador
+
+**Estructura HTML**: Creé 3 páginas:
+- Inicio: Introducción a la tienda con 9 productos destacados
+- Galería: 6 productos con filtros por categoría
+- Contacto: Formulario para comunicarse
+
+**Diseño Responsive**: Usé CSS Flexbox y Grid para que se vea bien en móvil y escritorio. El sitio se adapta automáticamente según el tamaño de pantalla.
+
+**Interactividad**: 
+- Filtros en la galería para ver productos por categoría (Todos, Acción, Estrategia, Indie)
+- Validación del formulario para asegurar que el email es obligatorio y tiene formato correcto
+
+### Como Tester
+
+**Pruebas Manuales**: Probé el sitio de forma manual en TEST_REPORT.md:
+- Responsive en diferentes dispositivos
+- Filtros funcionan correctamente
+- Validación del email funciona
+- HTML está bien estructurado
+- Es accesible para lectores de pantalla
+
+**Pruebas Automáticas**: Usé Jest + jsdom para 12 tests automatizados:
+- 4 tests para validar que los filtros funcionan
+- 8 tests para validar la validación del email
+- Resultado: 12/12 tests pasando
+
+## Cómo usar
+
+```
 npm install
 npm test
 ```
 
-Si no puedes ejecutar npm localmente, el workflow de GitHub Actions (`.github/workflows/ci.yml`) ejecutará los tests automáticamente en cada push o pull request hacia `main`.
+## Entregables en GitHub
 
-Pruebas manuales sugeridas:
-- Abrir `galeria.html` y usar los botones de filtro (Todos / Acción / Estrategia / Indie).
-- Abrir `contacto.html` y probar enviar con/ sin correo.
-- Verificar responsive con DevTools (grid pasa a 1 columna en móvil, menú colapsa).
+- Código HTML, CSS y JavaScript funcional
+- 12 tests automáticos en tests/site.test.js
+- Reporte de pruebas manuales en TEST_REPORT.md
+- Documentación técnica en CAMBIOS_Y_SOLUCIONES.md
 
-Reporte de pruebas manuales: `TEST_REPORT.md`.
+## Cumplimiento
+
+Todo lo requerido está completo y funcionando:
+- 3 páginas HTML - Cumple
+- Diseño responsive con Flexbox/Grid - Cumple
+- Filtros funcionales - Cumple
+- Validación de email - Cumple
+- Pruebas manuales documentadas - Cumple
+- 12 tests automáticos pasando - Cumple
+- Código en GitHub - Cumple
+
+100% de requisitos completados.
