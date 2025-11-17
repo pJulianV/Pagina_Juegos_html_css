@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Verify Jest installation
+        run: npx jest --version
+
       - name: Run tests
-        run: npm test
+        run: npx jest --color
