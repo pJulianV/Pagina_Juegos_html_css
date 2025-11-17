@@ -35,10 +35,23 @@ Repositorio: https://github.com/pJulianV/Pagina_Juegos_html_css
 
 ## Cómo usar
 
+### Para ejecutar solo las pruebas
+
 ```
 npm install
 npm test
 ```
+
+### Para ejecutar el servidor con envío de emails
+
+1. Configura el archivo `.env` con tus datos de Gmail
+2. Ejecuta:
+```
+npm start
+```
+3. Abre http://localhost:3000/contacto.html y prueba el formulario
+
+Para detalles sobre cómo configurar el email, ver SETUP_EMAIL.md
 
 ## Entregables en GitHub
 
